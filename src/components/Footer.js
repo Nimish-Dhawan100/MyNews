@@ -4,14 +4,12 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div>
-      <a href='https://resolve-query.shashankj.tech/' target='_blank'>Report Bug</a>  <a href='https://resolve-query.shashankj.tech/#contactDev-form' target='_blank'>Contact Developer</a>
+      <a href='https://www.linkedin.com/in/nimish-d-41187a210/' target='_blank'>Report Bug</a>  <a href='https://www.linkedin.com/in/nimish-d-41187a210/' target='_blank'>Contact Developer</a>
 
       </div>
       <div className='footer'>
         Created by <span>
-          {/* <a target='_blank' href='https://www.shashankj.tech/'> */}
-            Shashank J.
-            {/* </a> */}
+            Nimish Dhawan
             </span> | © 2023 All rights reserved.
       </div>
     </div>
