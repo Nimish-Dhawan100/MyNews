@@ -20,15 +20,11 @@ const News= (props) => {
         // console.log("cdm");
         if(lang && country && category){
 
-            // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=4ead7440fb05472c9e3315666906d761&page=1&max=${this.props.max}`;
-            let uri = `https://gnews.io/api/v4/top-headlines?token=3fb55ca4ddae296e27f04ae96268e2c7&page=1&topic=${category}&max=${props.max}&lang=${lang}&country=${country}`;
-            // let url = (this.state.query !== "") ? `https://gnews.io/api/v4/search?q=${this.state.query}&token=3fb55ca4ddae296e27f04ae96268e2c7`: uri
+            let uri = `https://gnews.io/api/v4/top-headlines?token=56c4461e0e3d05331e8fac339eee7a31&page=1&topic=${category}&max=${props.max}&lang=${lang}&country=${country}`;
+
        
 console.log(uri)
-        // if(props.query){
-        //     console.log(props.query)
-        //     uri = `https://gnews.io/api/v4/search?q=${props.query}&token=3fb55ca4ddae296e27f04ae96268e2c7`
-        //     // query=null
+        
                 
         
 
@@ -117,40 +113,4 @@ export default News;
 
     
     
-    // handlePrevClick = async () =>{
-    //     console.log("Previous");
-        
-    //     // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=4ead7440fb05472c9e3315666906d761&page=${this.state.page - 1}&max=${this.props.max}`;
-    //     let url = `https://gnews.io/api/v4/top-headlines?token=3fb55ca4ddae296e27f04ae96268e2c7&page=${this.state.page - 1}&country=${this.props.country}&topic=${this.props.category}&max=${this.props.max}`;
-
-    //     this.setState({loading: true});
-    //     let data = await fetch(url);
-    //     let parsedData = await data.json(); 
-    //     console.log(parsedData);
-        
-    //     this.setState({
-    //         page: this.state.page - 1,
-    //         articles: parsedData.articles,
-    //         loading: false
-    //     })
-        
-    // }
     
-    // handleNextClick = async () =>{
-    //     console.log("Next");
-    //         if(!(this.state.page+1>Math.ceil(this.state.totalArticles/15))){
-    //         // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=4ead7440fb05472c9e3315666906d761&page=${this.state.page + 1}&max=${this.props.max}`;
-    //         let url = `https://gnews.io/api/v4/top-headlines?token=3fb55ca4ddae296e27f04ae96268e2c7&ppage=${this.state.page - 1}&country=${this.props.country}&topic=${this.props.category}&max=${this.props.max}`;
-
-    //         this.setState({loading: true});
-    //         let data = await fetch(url);
-    //         let parsedData = await data.json(); 
-    //         console.log(parsedData);
-            
-    //         this.setState({
-    //             page: this.state.page + 1,
-    //             articles: parsedData.articles,
-    //             loading: false
-    //         })
-    //     }
-    // }
